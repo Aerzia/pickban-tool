@@ -8,10 +8,10 @@ async function load(){
     var patchRaw = await patchResponse.json();
     currentPatch = patchRaw[0]
 
-    const response2 = await fetch("https://ddragon.leagueoflegends.com/cdn/" + currentPatch + "/data/en_US/champion.json");
+    const listResponse = await fetch("https://ddragon.leagueoflegends.com/cdn/" + currentPatch + "/data/en_US/champion.json");
     // Storing data in form of JSON
-    var listResponse = await response2.json();
-    var data = listResponse.data;
+    var listRaw = await listResponse.json();
+    var data = listRaw.data;
     for (let key in data) {
         championsList.push(key)
     }
