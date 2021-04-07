@@ -59,9 +59,6 @@ function imageListClick(element){
     // Si élément sélectionné remplace + griser
     if(selected != null){
         selected.src = element.src
-        selected == null
-        selected.classList.remove("selected")
-        selected.filter(GRAY,0.5);
     }
 }
 

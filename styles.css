@@ -1,5 +1,5 @@
 body{
-    background-color:darkgrey
+    background-color:silver
 }
 
 #root{
@@ -68,7 +68,7 @@ body{
 
 input {
     width: 30%;
-    height: 2%;
+    height: 30px;
     text-align: center;
 }
 
@@ -76,12 +76,14 @@ input {
     padding: 10px;
     overflow-y : scroll;
     overflow-x: hidden;
-    height: 30%;
+    height: 50%;
     width: 98%;
+    color: #0000;
+    transition: color 0.2s ease;
 }
 
 .list:hover {
-    color: #666;
+    color:darkgrey;
   }
 
 .list::-webkit-scrollbar {
